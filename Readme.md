@@ -1,5 +1,8 @@
 # Timezone Reproduction
 
+- MySQL: https://github.com/prisma/prisma/issues/6384
+- Postgres: https://github.com/prisma/prisma/issues/6384
+
 ## 1. Setting up MySQL on a Mac locally using Homebrew
 
 1. `brew install mysql`
