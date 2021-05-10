@@ -28,7 +28,7 @@ async function main() {
   await runMySQL(now)
 }
 
-//
+// 1. Test Prisma Client
 async function runPrisma(now) {
   await prisma.users.create({
     data: {
@@ -38,7 +38,7 @@ async function runPrisma(now) {
   })
 }
 
-// 1. Sequelize sets the default
+// 2. Test Sequelize Client
 async function runSequelize(now) {
   const User = sequelize.define("users", {
     created_at: Sequelize.DataTypes.DATE,
@@ -51,6 +51,7 @@ async function runSequelize(now) {
   await user.save()
 }
 
+// 3. Test MySQL Raw Client
 async function runMySQL(now) {
   const conn = await mysql.createConnection({
     host: "localhost",
