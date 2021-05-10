@@ -67,16 +67,3 @@ main()
     prisma.$disconnect()
     sequelize.close()
   })
-
-// 2021-05-03 17:56:19.430003	[root] @ localhost [127.0.0.1]	20	1	Connect	root@localhost on prisma_timezones using TCP/IP
-// 2021-05-03 17:56:19.430574	root[root] @ localhost [127.0.0.1]	20	1	Query	"SET time_zone = '+00:00'"
-// 2021-05-03 15:56:19.431436	root[root] @ localhost [127.0.0.1]	20	1	Query	SELECT 1+1 AS result
-// 2021-05-03 15:56:19.442749	root[root] @ localhost [127.0.0.1]	20	1	Prepare	INSERT INTO `users` (`id`,`type`) VALUES (DEFAULT,?)
-// 2021-05-03 15:56:19.443646	root[root] @ localhost [127.0.0.1]	20	1	Execute	"INSERT INTO `users` (`id`,`type`) VALUES (DEFAULT,'sequelize')"
-// 2021-05-03 17:56:19.471002	root[root] @ localhost []	18	1	Query	BEGIN
-// 2021-05-03 17:56:19.475735	root[root] @ localhost []	18	1	Prepare	INSERT INTO `prisma_timezones`.`users` (`updated_at`,`created_at`,`type`) VALUES (?,?,?)
-// 2021-05-03 17:56:19.476711	root[root] @ localhost []	18	1	Execute	"INSERT INTO `prisma_timezones`.`users` (`updated_at`,`created_at`,`type`) VALUES ('2021-05-03 15:56:19.469000','2021-05-03 15:56:19.432000','prisma')"
-// 2021-05-03 17:56:19.478574	root[root] @ localhost []	18	1	Prepare	SELECT `prisma_timezones`.`users`.`id`, `prisma_timezones`.`users`.`updated_at`, `prisma_timezones`.`users`.`created_at`, `prisma_timezones`.`users`.`type` FROM `prisma_timezones`.`users` WHERE `prisma_timezones`.`users`.`id` = ? LIMIT ? OFFSET ?
-// 2021-05-03 17:56:19.478678	root[root] @ localhost []	18	1	Prepare	SELECT `prisma_timezones`.`users`.`id`, `prisma_timezones`.`users`.`updated_at`, `prisma_timezones`.`users`.`created_at`, `prisma_timezones`.`users`.`type` FROM `prisma_timezones`.`users` WHERE `prisma_timezones`.`users`.`id` = ? LIMIT ? OFFSET ?
-// 2021-05-03 17:56:19.478707	root[root] @ localhost []	18	1	Execute	SELECT `prisma_timezones`.`users`.`id`, `prisma_timezones`.`users`.`updated_at`, `prisma_timezones`.`users`.`created_at`, `prisma_timezones`.`users`.`type` FROM `prisma_timezones`.`users` WHERE `prisma_timezones`.`users`.`id` = 55 LIMIT 1 OFFSET 0
-// 2021-05-03 17:56:19.479035	root[root] @ localhost []	18	1	Query	COMMIT
