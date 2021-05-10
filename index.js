@@ -10,7 +10,7 @@ const sequelize = new Sequelize.Sequelize(
       timestamps: false,
     },
     logging: false,
-    timezone: "+02:00",
+    // timezone: "+02:00",
   }
 )
 
@@ -21,11 +21,11 @@ async function main() {
   await sequelize.authenticate()
   const now = new Date()
   // 1. Test Prisma Client
-  // await runPrisma(now)
+  await runPrisma(now)
   // 2. Test Sequelize Client
   await runSequelize(now)
   // 3. Test MySQL Raw Client
-  // await runMySQL(now)
+  await runMySQL(now)
 }
 
 //
