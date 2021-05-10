@@ -54,12 +54,12 @@ I got:
 | 73  | 2021-05-10 13:02:11 | 2021-05-10 13:02:11 | sequelize |
 | 74  | 2021-05-10 15:02:11 | 2021-05-10 15:02:11 | raw       |
 
-> Notice how the raw query is 2 hours off from sequelize and prisma.
-
 ### Time of writing:
 
 - Berlin: 15:02:11
 - UTC: 13:02:11
+
+Notice how the raw query is 2 hours off from sequelize and prisma.
 
 ### Takeaways
 
