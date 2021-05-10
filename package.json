@@ -1,0 +1,25 @@
+{
+  "name": "mysql-timezones",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "2.20.0-dev.44",
+    "@types/node": "14.14.37",
+    "@types/sequelize": "4.28.9",
+    "dotenv": "8.2.0",
+    "mysql2": "2.2.5",
+    "sequelize": "6.6.2",
+    "typescript": "4.2.3"
+  },
+  "devDependencies": {
+    "prisma": "2.20.0-dev.44"
+  },
+  "description": ""
+}
