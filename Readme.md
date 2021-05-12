@@ -3,6 +3,18 @@
 - MySQL: https://github.com/prisma/prisma/issues/5051
 - Postgres: https://github.com/prisma/prisma/issues/6384
 
+## Problem
+
+`DateTime`'s written in a timezone other than UTC will be off by their offset when read by the Prisma Client.
+
+## Goal
+
+Be able to configure the Prisma Client so you can work with existing data that was written in a database with a timezone that is different than UTC.
+
+## Next Steps
+
+- [ ] Test timezone-aware data types. Does `SET TIMEZONE` influence their behavior?
+
 ## 1. Setting up MySQL on a Mac locally using Homebrew
 
 1. `brew install mysql`
